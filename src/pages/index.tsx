@@ -29,7 +29,7 @@ export default function Home() {
                         <textarea onChange={event => setMarkdownValue(event.target.value)} value={markdownValue} placeholder={initialMarkdown} className={"flex-grow resize-none outline-none bg-transparent p-8"}></textarea>
                     </section>
 
-                    <section className={(!showPreview ? "opacity-0 pointer-events-none " : "") + "bg-stone-900 text-white overflow-hidden flex lg:opacity-100 flex-col absolute inset-0 lg:relative"}>
+                    <section className={(!showPreview ? "opacity-0 pointer-events-none " : "") + "lg:pointer-events-auto bg-stone-900 text-white overflow-hidden flex lg:opacity-100 flex-col absolute inset-0 lg:relative"}>
                         <SectionHeading title={"Preview"} callback={togglePreview}/>
                         <div id={"preview"} className={"p-8 overflow-scroll flex-grow"}>
                             <ReactMarkdown>{markdownValue.trim().length !== 0 ? markdownValue : "Use the editor to begin writing."}</ReactMarkdown>
