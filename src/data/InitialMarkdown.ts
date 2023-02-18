@@ -7,7 +7,7 @@ Markdown is a lightweight markup language that you can use to add formatting ele
 
 ### Features
 - Create headings, paragraphs, links, block quotes, inline-code, code blocks, and lists
-- Name and save the document to access again later
+- And that is just about it, to be honest
 
 > This is an example of a block quote. If you would like to learn more about Markdown syntax, you can visit this [markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/).
 
