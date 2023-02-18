@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import ReactMarkdown from "react-markdown";
-import React, {useState} from "react";
-import {ImLoop} from "react-icons/im";
+import {useState} from "react";
 import initialMarkdown from "@/data/InitialMarkdown";
+import SectionHeading from "@/components/SectionHeading";
 
 export default function Home() {
     const [markdownValue, setMarkdownValue] = useState(initialMarkdown)
@@ -39,18 +39,5 @@ export default function Home() {
                 </main>
             </div>
         </>
-    )
-}
-
-function SectionHeading(props: {
-    title: string
-    callback: () => void
-}) {
-    return (
-        <header className={"bg-stone-800 p-4 font-semibold flex items-center justify-between"}>
-            <h2>{props.title}</h2>
-
-            <ImLoop onClick={props.callback} className={"text-lg cursor-pointer lg:hidden"}/>
-        </header>
     )
 }
